@@ -1,7 +1,9 @@
+/*Seleccionamos la tipografia de nuestro proyecto*/
 body{
   font-family: sans-serif;
 }
 
+/*Por medio de list-style:none le quitamos el aspecto de lista(las viñetas)*/
 ul{
   /*outline: 1px solid yellow;*/
   list-style: none;
@@ -11,15 +13,18 @@ ul{
   line-height: 30px;
 }
 
+/*Elegimos el color del boton de cada enlace*/
 li{
   /*outline: 1px solid red;*/
   background: #f5f5f0;
 }
 
+/*Elegimos el color al que queremos que cambie cuando el cursor este sobrevolando el enlace*/
 a:hover{
   background: #e0e0d1;
 }
 
+/*Por medio de text-decoration:none le quitamos el aspecto pre-establecido a nuestros enlaces*/
 a{
   /*outline: 1px solid green;*/
   display: block;
@@ -28,28 +33,34 @@ a{
   padding-left: 10px;
 }
 
+/*Por medio de una seudoclase llamada first-child, modificamos el color del background del primer enlace*/
 ul li:first-child {
   background: #f9a91a;
 }
 
+/*Cambiamos el color de la fuente de texto del primer enlace*/
 ul li:first-child a{
   color: #fff;
 }
 
+/*Seleccionamos el color de la fuente de texto a la que queremos que cambien cuando el cursor sobre vuele el enlace*/
 ul li:first-child a:hover{
   color: #000;
 }
 
+/*Seleccionamos el color del background y de la fuente al que queremos que cambien los enlaces al darle click*/
 a:active{
   background: #333;
   color: #fff;
 }
 
+/*Seleccionamos el color al que queremos que cambie el texto del primer enlace de nuestra lista(inicio)*/
 ul li:first-child a:active{
   color: #fff;
 }
 
+/*Establecemos el ancho de nuestro menu*/
 nav{
-  outline: 1px solid red;
+  /*outline: 1px solid red;*/
   width: 200px;
 }
